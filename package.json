@@ -1,0 +1,13 @@
+{
+  "name": "sliding-ruler",
+  "version": "1.0.0",
+  "description": "sliding ruler",
+  "main": "index.js",
+  "repository": "git@github.com:samwangdd/sliding-ruler.git",
+  "author": "samwangdd <wyysammore@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^7.27.0",
+    "prettier": "^2.3.0"
+  }
+}

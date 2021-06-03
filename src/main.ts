@@ -1,4 +1,4 @@
-// src/main.ts
-export default function () {
-  console.log('foo');
-}
+(function () {
+  console.log('foos');
+  document.getElementById('#app').innerHTML = 'hello rollup'
+})()

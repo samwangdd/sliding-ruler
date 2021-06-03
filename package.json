@@ -1,0 +1,31 @@
+{
+  "name": "sliding-ruler",
+  "version": "1.0.0",
+  "description": "sliding ruler",
+  "main": "index.js",
+  "repository": "git@github.com:samwangdd/sliding-ruler.git",
+  "author": "samwangdd <wyysammore@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development npm run watch",
+    "build": "cross-env NODE_ENV=production rollup -c && tsc --declarationDir types",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "rollup -cw",
+    "lint": "eslint --ext .js --ext .ts test bundles packages tools scripts --ignore-path .gitignore --max-warnings 0",
+    "lintfix": "npm run lint -- --fix"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.27.0",
+    "rollup": "^2.50.6",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-generate-html-template": "^1.7.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-serve": "^1.1.0",
+    "rollup-plugin-typescript": "^1.0.1",
+    "tslib": "^2.2.0",
+    "typescript": "^4.3.2"
+  }
+}

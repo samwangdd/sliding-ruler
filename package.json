@@ -6,8 +6,18 @@
   "repository": "git@github.com:samwangdd/sliding-ruler.git",
   "author": "samwangdd <wyysammore@gmail.com>",
   "license": "MIT",
-  "dependencies": {
+  "scripts": {
+    "start": "npm run watch",
+    "watch": "rollup -cw",
+    "lint": "eslint --ext .js --ext .ts test bundles packages tools scripts --ignore-path .gitignore --max-warnings 0",
+    "lintfix": "npm run lint -- --fix"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "cross-env": "^7.0.3",
     "eslint": "^7.27.0",
-    "prettier": "^2.3.0"
+    "rollup": "^2.50.6",
+    "rollup-plugin-typescript": "^1.0.1",
+    "typescript": "^4.3.2"
   }
 }
